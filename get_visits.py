@@ -18,17 +18,17 @@ def get_basic_metrics():
 
     token = os.getenv("TOKEN")
 
-    # Create report settings
-    pa = PiwikAnalytics()
-    pa.set_api_url("https://marquinsmith.com/piwik/piwik")
-    pa.set_id_site(1)  # 1 is the side ID you want to log to
-    pa.set_format("json")
-    pa.set_period("day")
-    pa.set_date("last30")
-    pa.set_method("VisitsSummary.get")
+    # Build url string
+    base_url = 'https://marquinsmith.com/piwik/piwik?module=API'
+    site_num = '&idSite=1'
+    return_format = '&format=json'
+    period = '&period=day'
+    date_range = '&date=last30'
+    method = '&method=VisitsSummary.get'
+    token_string = "&token_auth=" + token
 
-    # append token onto url string
-    my_url = pa.get_query_string() + "&token_auth=" + os.getenv("TOKEN")
+my_url = base_url + site_num + return_format + period + date_range + method + token_string
+
 
     # send request for report
     r = requests.get(my_url)
