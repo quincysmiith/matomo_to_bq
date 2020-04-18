@@ -8,7 +8,6 @@ ipython = "*"
 
 [packages]
 pandas = "*"
-piwikapi = "*"
 python-dotenv = "*"
 requests = "*"
 google-auth = "*"

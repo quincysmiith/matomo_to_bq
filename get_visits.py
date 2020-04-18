@@ -27,7 +27,7 @@ def get_basic_metrics():
     method = '&method=VisitsSummary.get'
     token_string = "&token_auth=" + token
 
-my_url = base_url + site_num + return_format + period + date_range + method + token_string
+    my_url = base_url + site_num + return_format + period + date_range + method + token_string
 
 
     # send request for report
