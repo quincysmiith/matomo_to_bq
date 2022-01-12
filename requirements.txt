@@ -18,7 +18,7 @@ Jinja2==2.11.1
 jinja2-time==0.2.0
 MarkupSafe==1.1.1
 pathspec==0.7.0
-pipenv==2018.11.26
+pipenv==2022.1.8
 poyo==0.5.0
 pycosat==0.6.3
 pycparser==2.19
