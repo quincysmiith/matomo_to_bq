@@ -10,7 +10,7 @@ chardet==3.0.4
 Click==7.0
 conda==4.7.12
 conda-package-handling==1.6.0
-cookiecutter==1.7.0
+cookiecutter==2.1.1
 cryptography==2.8
 future==0.18.2
 idna==2.8
